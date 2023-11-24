@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:fuenteHelvetica;
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+a , li {
+    font-size: none;
+    text-decoration: none;
+    display: inline-block;
+    color: #1416B8;
+}
+
+
+/* ----------------FUENTE -------------------------------*/
+
+@font-face {
+    font-family: fuenteHelvetica;
+    src: url(../fuentes/Helvetica.ttf);
+}
+
+/* ----------------------------------HEADER - NAV------------------------------------------------------- */
+
+#header {
+    background-color:rgba(0, 0, 0, 0);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+#navBar {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+
+.MenuNav {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.MenuNav ul li {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.LogoHeader h4 a {
+    color: #DDF246;
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+/*----------------HOVER NAV------------*/
+#navBar .MenuNav ul a:hover {
+    color: #DDF246;
+}
+
+#navBar .LogoHeader h4 a:hover {
+    color: #1416B8;
+}
+/*----------------SISTEMA RESPONSIVO NAV-------------*/
+
+@media (max-width: 888px) {
+    #navBar ul li {
+        display: none;
+    }
+}
+
+/* ----------------------------------MAIN-------------------------------------------------------- */
+/* ---------ESTILOS DEL BODY------- */
+
+main {
+    min-height: 100vh;
+    padding-top: 60px;
+    background-color: #ffffff;
+}
+
+/* --------------MAIN INICIO-------------- */
+
+#contenedorInicio {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    justify-content:space-between ;
+    flex-wrap: wrap;
+}
+    
+
+#contenedorInicio img {
+    width: 400px;
+    display: flex;
+    margin-bottom: 25px;
+}
+
+
+/* ----------PAGE FOTOSPERSONAS -------*/
+
+#fotosPersonas {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#fotosPersonas img {
+    width: 483px;
+    margin: 15px;
+    display: flex;
+}
+
+
+/*------PAGE FOTOSLUGARES----*/
+
+#fotosLugares {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#fotosLugares img {
+    width: 483px;
+    margin: 15px;
+    display: flex;
+}
+
+/* --------PAGE BIO ---------- */
+
+#biografia {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#contenedorTextobio {
+    display: flex;
+    flex-direction: column;
+}
+
+.biografiaParrafo {
+    display: flex;
+    text-align: justify;
+    width: 700px;
+    height: 200px;
+    margin: 20px;
+    justify-content: flex-start;
+}
+
+.biografiaAbout {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    color: #000000;
+    font-size: 12px;
+}
+
+.biografiaParrafo p {
+    color: #000000;
+    font-size: 15px;
+}
+
+.biografiaFoto img {
+    width: 400px;
+    height: 400px;
+}
+
+/*-------------PAGE CONTACTO --------*/
+
+.MainContacto {
+    background-image: url(../images/contacto/contacto.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+#contenedorContacto {
+    display: inline-block;
+    
+}
+.formContacto {
+    position: relative;
+}
+
+.formContacto form {
+    position: absolute; 
+    top: 100px;
+    left: 520px;
+}
+
+.formcontactoNombre {
+    font-size: 15px;
+    background-color: white;
+    border: 1px solid grey;
+    height: 35px;
+    border-radius: 20px;
+    width: 250px;
+}
+
+.formcontactoEmail {
+    font-size: 15px;
+    background-color: white;
+    border: 1px solid grey;
+    height: 35px;
+    border-radius: 20px;
+    width: 250px;
+}
+
+.formcontactoMensaje {
+    font-size: 15px;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 10px;
+    width: 260px;
+}
+
+#submit {
+    font-size: 15px;
+    margin: 3px;
+    display: inline-block;
+
+}
+
+/*-------------------------------------------FOOTER-------------------------------------------------------*/
+
+#footer {
+    display: flex;
+    height: auto;
+    width: 100%;
+    bottom: 0;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*--------- CAJA #1 LOGONOMBRE---------*/
+
+.footerLogonombre {
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: flex-start;
+    color: #1416B8;
+    text-align: left;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.footerLogonombre p {
+    margin-bottom: 0;
+    font-size: 10px;
+}
+
+.footerLogonombre h4 {
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/*-------- CAJA #3 LINKS PAGES---------*/
+
+.footerLinks ul {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.footerLinks ul li {
+    width: auto;
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+    
+
+}
+
+
+/*---------- CAJA #4 REDES----------*/
+
+
+.footerRedes i {
+    font-size: 17px;
+    color: #DDF246;
+    margin: 5px;
+}
+.footerRedes {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    
+}
+
+/*------------HOVERFOOTER-------------*/
+
+#footer ul a:hover {
+    color: #DDF246;
+}
+
+/*----SISTEMA RESPONSIVO FOOTER-------*/
+
+@media (max-width: 768px) {
+    .footerLinks ul li {
+        font-size: 12px;
+    }
+    .footerRedes i {
+        font-size: 15px;
+    }
+
+    .footerLogonombre h4 {
+        font-size: 15px;
+    }
+    .footerLogonombre p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #footer {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+    }
+    .footerLinks ul li {
+        font-size: 10px;
+        justify-content: center;
+    }
+
+    .footerLinks ul {
+        margin-top: 0;
+    }
+    .footerRedes i {
+        font-size: 12px;
+    }
+
+    .footerLogonombre {
+        margin: 0;
+    }
+
+    .footerLogonombre h4 {
+        font-size: 15px;
+        justify-content: center;
+
+    }
+    .footerLogonombre p {
+        font-size: 10px;
+        justify-content: center;
+    }
+}
+
+/*----SISTEMA RESPONSIVO MAIN------*/
+@media (max-width: 768px) {
+}
