@@ -35,9 +35,8 @@ a , li {
 #navBar {
     display: flex;
     justify-content: space-between;
-    margin: 10px;
+    margin-top: 0;
 }
-
 
 .MenuNav {
     height: 60px;
@@ -55,6 +54,7 @@ a , li {
     color: #DDF246;
     font-size: 40px;
     margin-left: 20px;
+
 }
 
 /*----------------HOVER NAV------------*/
@@ -66,8 +66,23 @@ a , li {
     color: #1416B8;
 }
 /*----------------SISTEMA RESPONSIVO NAV-------------*/
-
-@media (max-width: 888px) {
+@media (max-width: 768px) {
+    #navBar ul li {
+        font-size: 12px;
+    }
+}   
+@media (max-width: 768px) {
+    .LogoHeader h4 a {
+        font-size: 30px;
+        }
+}
+@media (max-width: 768px) {
+    .LogoHeader {
+        display: flex;
+        align-items: center;
+    }
+}
+@media (max-width: 480px) {
     #navBar ul li {
         display: none;
     }
@@ -83,23 +98,17 @@ main {
 }
 
 /* --------------MAIN INICIO-------------- */
-
-#contenedorInicio {
-    width: 100%;
-    display: flex;
-    margin-top: 20px;
-    justify-content:space-between ;
-    flex-wrap: wrap;
-}
-    
-
-#contenedorInicio img {
-    width: 400px;
-    display: flex;
-    margin-bottom: 25px;
+#carouselExampleFade {
+    margin-top: 0;
 }
 
-
+/*----------------SISTEMA RESPONSIVO MAIN INICIO-------------*/
+@media (max-width: 768px) {
+    #contenedorInicio {
+        display: flex;
+        flex-direction: column;
+    }
+}
 /* ----------PAGE FOTOSPERSONAS -------*/
 
 #fotosPersonas {
@@ -172,6 +181,33 @@ main {
     height: 400px;
 }
 
+/*----------------SISTEMA RESPONSIVO bio------------*/
+@media (max-width: 768px) {
+    #biografia {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    #biografia .biografiaFoto img {
+        width: 300px;
+        height: 300px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    #contenedorTextobio .biografiaParrafo {
+        width: 450px;
+        height: 120px;
+    }
+}
+@media (max-width: 768px) {
+    #contenedorTextobio .biografiaParrafo p {
+        font-size: 12px;
+    }
+}
 /*-------------PAGE CONTACTO --------*/
 
 .MainContacto {
@@ -323,7 +359,7 @@ main {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     #footer {
         flex-direction: column;
         height: auto;
@@ -332,10 +368,13 @@ main {
     .footerLinks ul li {
         font-size: 10px;
         justify-content: center;
+        padding: 0;
     }
-
+    
     .footerLinks ul {
         margin-top: 0;
+        justify-content: center;
+        padding: 0;
     }
     .footerRedes i {
         font-size: 12px;
@@ -354,8 +393,4 @@ main {
         font-size: 10px;
         justify-content: center;
     }
-}
-
-/*----SISTEMA RESPONSIVO MAIN------*/
-@media (max-width: 768px) {
 }
