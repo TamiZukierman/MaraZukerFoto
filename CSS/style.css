@@ -14,7 +14,6 @@ a , li {
     color: #1416B8;
 }
 
-
 /* ----------------FUENTE -------------------------------*/
 
 @font-face {
@@ -30,32 +29,40 @@ a , li {
     width: 100%;
     position: fixed;
     z-index: 100;
+
 }
 
 #navBar {
     display: flex;
-    justify-content: space-between;
     margin-top: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
 }
 
 .MenuNav {
-    height: 60px;
+    height: 80px;
     display: flex;
     align-items: center;
+
+}
+
+.MenuNav ul {
+    padding: 0;
+    margin: 0;
 }
 
 .MenuNav ul li {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-right: 10px;
     font-size: 14px;
 }
 
 .LogoHeader h4 a {
     color: #DDF246;
     font-size: 40px;
-    margin-left: 20px;
-
 }
+
+
 
 /*----------------HOVER NAV------------*/
 #navBar .MenuNav ul a:hover {
@@ -65,23 +72,30 @@ a , li {
 #navBar .LogoHeader h4 a:hover {
     color: #1416B8;
 }
+
+
+
 /*----------------SISTEMA RESPONSIVO NAV-------------*/
+
 @media (max-width: 768px) {
+    #navBar ul {
+        display: none;
+    }
     #navBar ul li {
         font-size: 12px;
     }
-}   
-@media (max-width: 768px) {
     .LogoHeader h4 a {
         font-size: 30px;
         }
-}
-@media (max-width: 768px) {
+    .logoHeader h4 {
+        margin-top: 22px;
+}   
     .LogoHeader {
-        display: flex;
-        align-items: center;
-    }
+    display: flex;
+    align-items: center;
 }
+}
+
 @media (max-width: 480px) {
     #navBar ul li {
         display: none;
@@ -99,15 +113,23 @@ main {
 
 /* --------------MAIN INICIO-------------- */
 #carouselExampleFade {
-    margin-top: 0;
+    padding-top: 30px;
 }
 
 /*----------------SISTEMA RESPONSIVO MAIN INICIO-------------*/
-@media (max-width: 768px) {
-    #contenedorInicio {
-        display: flex;
-        flex-direction: column;
+@media (max-width: 480px) {
+    .carousel-inner {
+        width: 100%;
+        height: auto;
     }
+}
+@media (max-width: 768px) {
+    .carousel-inner {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        margin-top: 40px;
+}
 }
 /* ----------PAGE FOTOSPERSONAS -------*/
 
@@ -157,7 +179,7 @@ main {
 .biografiaParrafo {
     display: flex;
     text-align: justify;
-    width: 700px;
+    width: 480px;
     height: 200px;
     margin: 20px;
     justify-content: flex-start;
@@ -182,32 +204,33 @@ main {
 }
 
 /*----------------SISTEMA RESPONSIVO bio------------*/
+
 @media (max-width: 768px) {
     #biografia {
         display: flex;
         flex-direction: column;
+        margin-bottom: 30px;
     }
-}
-
-@media (max-width: 768px) {
     #biografia .biografiaFoto img {
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
         margin-top: 20px;
     }
-}
-
-@media (max-width: 768px) {
     #contenedorTextobio .biografiaParrafo {
-        width: 450px;
+        width: 400px;
         height: 120px;
     }
-}
-@media (max-width: 768px) {
     #contenedorTextobio .biografiaParrafo p {
         font-size: 12px;
+        
+    }
+    .biografiaAbout {
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }
+
+
 /*-------------PAGE CONTACTO --------*/
 
 .MainContacto {
@@ -343,21 +366,6 @@ main {
 
 /*----SISTEMA RESPONSIVO FOOTER-------*/
 
-@media (max-width: 768px) {
-    .footerLinks ul li {
-        font-size: 12px;
-    }
-    .footerRedes i {
-        font-size: 15px;
-    }
-
-    .footerLogonombre h4 {
-        font-size: 15px;
-    }
-    .footerLogonombre p {
-        font-size: 10px;
-    }
-}
 
 @media (max-width: 768px) {
     #footer {
@@ -366,7 +374,7 @@ main {
         gap: 10px;
     }
     .footerLinks ul li {
-        font-size: 10px;
+        font-size: 12px;
         justify-content: center;
         padding: 0;
     }
@@ -385,12 +393,51 @@ main {
     }
 
     .footerLogonombre h4 {
-        font-size: 15px;
+        font-size: 16px;
         justify-content: center;
+        margin-top: 0;
 
     }
     .footerLogonombre p {
+        font-size: 8px;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 480px) {
+    #footer {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+    }
+    .footerLinks ul li {
         font-size: 10px;
+        justify-content: center;
+        padding: 0;
+    }
+    
+    .footerLinks ul {
+        margin-top: 0;
+        justify-content: center;
+        padding: 0;
+    }
+    .footerRedes i {
+        font-size: 10px;
+    }
+
+    .footerLogonombre {
+        margin: 0;
+    }
+
+    .footerLogonombre h4 {
+        font-size: 14px;
+        justify-content: center;
+        margin-top: 0;
+
+    }
+    .footerLogonombre p {
+        font-size: 8px;
         justify-content: center;
     }
 }
