@@ -126,6 +126,9 @@ a , li {
     text-align: center;
     transition: all .5s;
 }
+#navBar .MenuNav ul a:hover {
+    color:white;
+}
 .barras {
     width: 150px;
 }
