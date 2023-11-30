@@ -14,7 +14,7 @@ a , li {
     color: #1416B8;
 }
 
-/* ----------------FUENTE -------------------------------*/
+/* -----------------------------------------------FUENTE --------------------------------------------------*/
 
 @font-face {
     font-family: fuenteHelvetica;
@@ -22,17 +22,15 @@ a , li {
 }
 
 /* ----------------------------------HEADER - NAV------------------------------------------------------- */
-
 #header {
     background-color:rgba(0, 0, 0, 0);
     height: 80px;
     width: 100%;
-    z-index: 1000;
-    position: relative;
-    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 101;
 
 }
-
 #navBar {
     display: flex;
     width: 100%;
@@ -41,26 +39,21 @@ a , li {
     height: 80px;
     justify-content: space-between;
 }
-
 .MenuNav {
     height: 80px;
     display: flex;
     align-items: center;
 }
-
 .MenuNav ul {
     padding: 0;
     margin: 0;
     margin-right: 10px;
     float: right;
-
 }
-
 .MenuNav ul li {
     line-height: 80px;
     margin: 0 5px;
 }
-
 .MenuNav ul li a {
     color: #1416B8;
     font-size: 14px;
@@ -73,7 +66,6 @@ a , li {
     font-weight: bold;
     height: 80px;
 }
-
 .checktn {
     font-size: 30px;
     color: #1416B8;
@@ -82,12 +74,10 @@ a , li {
     cursor: pointer;
     display: none;
 }
-
 #check {
     display: none;
 }
-
-/*----------------HOVER NAV------------*/
+/*-----------------------------HOVER NAV--------------------------------------*/
 #navBar .MenuNav ul a:hover {
     color: #DDF246;
 }
@@ -96,12 +86,15 @@ a , li {
     color: #1416B8;
 }
 
-
-/*----------------SISTEMA RESPONSIVO NAV-------------*/
+/*-------------------------------SISTEMA RESPONSIVO NAV---------------------------------------------------*/
 
 @media (max-width: 768px) {
+    #header {
+        position: relative;
+    }
     #navBar {
         justify-content: space-evenly;
+        margin-top: 20px;
     }
     #navBar ul li {
         display: block;
@@ -111,12 +104,10 @@ a , li {
     #navBar ul li a {
         font-size: 14px;
     }
-
     .LogoHeader h4 a {
-        font-size: 30px;
+        font-size: 35px;
         line-height: 85px;
         }
-
     .LogoHeader {
     display: flex;
     align-items: center;
@@ -135,11 +126,9 @@ a , li {
     text-align: center;
     transition: all .5s;
 }
-
 .barras {
     width: 150px;
 }
-
 #check:checked ~ .MenuNav ul {
     left: 0;
 }
@@ -162,28 +151,22 @@ a , li {
 main {
     min-height: 100vh;
     background-color: #ffffff;
+
 }
 
 /*----------------SISTEMA RESPONSIVO MAIN INICIO-------------*/
 
 @media (max-width: 942px) {
-    main {
-        min-height: 0;
-        margin-bottom: 30px;
-    }
     main, footer {
-        margin: 0;
+        margin-top: 0;
         padding: 0;
 }
 }
 @media (max-width: 768px) {
-    .carousel-inner {
-        width: 100%;
-        height: auto;
-}
 main {
     min-height: 0;
     margin-bottom: 20px;
+    margin-top: 40px;
 }
 }
 
@@ -219,12 +202,13 @@ main {
     display: flex;
 }
 
-/* --------PAGE BIO ---------- */
+/* --------------------------------------------PAGE BIO -------------------------------------------------- */
 
 #biografia {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background-color:#ffffff;
 }
 
 #contenedorTextobio {
@@ -237,16 +221,16 @@ main {
     text-align: justify;
     width: 480px;
     height: 200px;
-    margin: 20px;
     justify-content: flex-start;
+    padding: 20px;
 }
 
 .biografiaAbout {
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
     color: #000000;
     font-size: 12px;
+    padding: 20px;
 }
 
 .biografiaParrafo p {
@@ -255,8 +239,8 @@ main {
 }
 
 .biografiaFoto img {
-    width: 400px;
-    height: 400px;
+    width: 380px;
+    height: 380px;
 }
 
 /*----------------SISTEMA RESPONSIVO bio------------*/
@@ -273,8 +257,8 @@ main {
         margin-top: 20px;
     }
     #contenedorTextobio .biografiaParrafo {
-        width: 400px;
-        height: 120px;
+        width: 320px;
+        height: 200px;
     }
     #contenedorTextobio .biografiaParrafo p {
         font-size: 12px;
@@ -285,6 +269,16 @@ main {
         margin-bottom: 20px;
     }
 }
+
+@media (max-width: 480px) {
+    #biografia .biografiaFoto img {
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+    }
+}
+
+
 
 /*-------------PAGE CONTACTO --------*/
 
@@ -297,9 +291,6 @@ main {
 #contenedorContacto {
     display: inline-block;
     
-}
-.formContacto {
-    position: relative;
 }
 
 .formContacto form {
@@ -426,7 +417,6 @@ main {
 @media (max-width: 768px) {
     #footer {
         flex-direction: column;
-        height: auto;
         gap: 10px;
     }
     .footerLinks ul li {
@@ -444,12 +434,8 @@ main {
         font-size: 12px;
     }
 
-    .footerLogonombre {
-        margin: 0;
-    }
-
     .footerLogonombre h4 {
-        font-size: 16px;
+        font-size: 14px;
         justify-content: center;
         margin-top: 0;
 
@@ -464,7 +450,6 @@ main {
 @media (max-width: 480px) {
     #footer {
         flex-direction: column;
-        height: auto;
         gap: 10px;
     }
     .footerLinks ul li {
@@ -482,12 +467,9 @@ main {
         font-size: 10px;
     }
 
-    .footerLogonombre {
-        margin: 0;
-    }
 
     .footerLogonombre h4 {
-        font-size: 14px;
+        font-size: 12px;
         justify-content: center;
         margin-top: 0;
 
