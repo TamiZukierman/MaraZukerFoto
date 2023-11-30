@@ -144,6 +144,9 @@ a , li {
         font-size: 25px;
         line-height: 70px;
     }
+    #navBar {
+        margin-top: 0;
+    }
 }
 /* ----------------------------------MAIN-------------------------------------------------------- */
 /* ---------ESTILOS DEL BODY------- */
@@ -277,9 +280,12 @@ main {
 
 @media (max-width: 480px) {
     #biografia .biografiaFoto img {
-        width: 200px;
-        height: 200px;
-        margin-top: 20px;
+        width: 250px;
+        height: 250px;
+        margin-top: 0;
+    }
+    #biografia {
+        margin: 20px 0 0 0;
     }
 }
 
@@ -300,8 +306,8 @@ main {
 
 .formContacto form {
     position: absolute; 
-    top: 100px;
-    left: 520px;
+    top: 200px;
+    left: 495px;
 }
 
 .formcontactoNombre {
