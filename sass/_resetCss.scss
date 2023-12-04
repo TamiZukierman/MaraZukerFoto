@@ -1,0 +1,16 @@
+/* ---------------RESET CSS -------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:fuenteHelvetica;
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+a , li {
+    font-size: none;
+    text-decoration: none;
+    display: inline-block;
+    color: #1416B8;
+}

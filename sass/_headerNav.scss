@@ -1,0 +1,130 @@
+
+/* -------------HEADER - NAV------------------ */
+#header {
+    background-color:rgba(0, 0, 0, 0);
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 101;
+
+}
+#navBar {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+    height: 80px;
+    justify-content: space-between;
+}
+.MenuNav {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.MenuNav ul {
+    padding: 0;
+    margin: 0;
+    margin-right: 10px;
+    float: right;
+}
+.MenuNav ul li {
+    line-height: 80px;
+    margin: 0 5px;
+}
+.MenuNav ul li a {
+    color: #1416B8;
+    font-size: 14px;
+}
+.LogoHeader h4 a {
+    color: #DDF246;
+    font-size: 40px;
+    line-height: 68px;
+    padding: 0 10px;
+    font-weight: bold;
+    height: 80px;
+}
+.checktn {
+    font-size: 30px;
+    color: #1416B8;
+    float: right;
+    line-height: 78px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
+/*-----------------------------HOVER NAV--------------------------------------*/
+#navBar .MenuNav ul a:hover {
+    color: #DDF246;
+}
+
+#navBar .LogoHeader h4 a:hover {
+    color: #1416B8;
+}
+
+/*-------------------------------SISTEMA RESPONSIVO NAV---------------------------------------------------*/
+
+@media (max-width: 768px) {
+    #header {
+        position: relative;
+    }
+    #navBar {
+        justify-content: space-evenly;
+        margin-top: 20px;
+    }
+    #navBar ul li {
+        display: block;
+        margin:  50px 0;
+        line-height: 30px;
+    }
+    #navBar ul li a {
+        font-size: 14px;
+    }
+    .LogoHeader h4 a {
+        font-size: 35px;
+        line-height: 85px;
+        }
+    .LogoHeader {
+    display: flex;
+    align-items: center;
+}
+.checktn {
+    display: block;
+}
+#navBar ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #DDF246;
+    top: 80px;
+    left: 0;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+}
+#navBar .MenuNav ul a:hover {
+    color:white;
+}
+.barras {
+    width: 150px;
+}
+#check:checked ~ .MenuNav ul {
+    left: 0;
+}
+}
+
+@media (max-width: 480px) {
+    .LogoHeader h4 a {
+        font-size: 25px;
+        line-height: 85px;
+        }
+    .checktn {
+        font-size: 25px;
+        line-height: 70px;
+    }
+    #navBar {
+        margin-top: 0;
+    }
+}

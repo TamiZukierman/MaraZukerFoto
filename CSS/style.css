@@ -1,25 +1,118 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: fuenteHelvetica;
-  scroll-behavior: smooth;
-  scroll-padding-top: 80px;
+/*---------FOOTER----------------------------*/
+#footer {
+  display: flex;
+  height: auto;
+  width: 100%;
+  bottom: 0;
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: space-between;
 }
-
-a, li {
-  font-size: none;
-  text-decoration: none;
-  display: inline-block;
+#footer .footerLogonombre {
+  display: flex;
+  width: auto;
+  height: auto;
+  justify-content: flex-start;
   color: #1416B8;
+  text-align: left;
+  flex-direction: column;
+  margin-left: 10px;
+}
+#footer .footerLogonombre p {
+  margin-bottom: 0;
+  font-size: 10px;
+}
+#footer .footerLogonombre h4 {
+  display: flex;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+#footer .footerLinks ul {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+#footer .footerLinks li {
+  width: auto;
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 12px;
+}
+#footer .footerLinks li a:hover {
+  color: #DDF246;
+}
+#footer .footerRedes {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+}
+#footer .footerRedes i {
+  font-size: 17px;
+  color: #DDF246;
+  margin: 5px;
 }
 
-/* -----------------------------------------------FUENTE --------------------------------------------------*/
-@font-face {
-  font-family: fuenteHelvetica;
-  src: url(../fuentes/Helvetica.ttf);
+/*----SISTEMA RESPONSIVO FOOTER-------*/
+@media (max-width: 768px) {
+  #footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footerLinks ul li {
+    font-size: 12px;
+    padding: 0;
+  }
+  .footerLinks ul {
+    margin-top: 0;
+    padding: 0;
+    align-items: center;
+  }
+  .footerRedes i {
+    font-size: 12px;
+  }
+  .footerLogonombre h4 {
+    font-size: 14px;
+    justify-content: center;
+    margin-top: 0;
+  }
+  .footerLogonombre p {
+    font-size: 8px;
+    justify-content: center;
+  }
 }
-/* ----------------------------------HEADER - NAV------------------------------------------------------- */
+@media (max-width: 480px) {
+  #footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footerLinks ul li {
+    font-size: 10px;
+    justify-content: center;
+    padding: 0;
+  }
+  .footerLinks ul {
+    margin-top: 0;
+    justify-content: center;
+    padding: 0;
+  }
+  .footerRedes i {
+    font-size: 10px;
+  }
+  .footerLogonombre h4 {
+    font-size: 12px;
+    justify-content: center;
+    margin-top: 0;
+  }
+  .footerLogonombre p {
+    font-size: 8px;
+    justify-content: center;
+  }
+}
+/* -------------HEADER - NAV------------------ */
 #header {
   background-color: rgba(0, 0, 0, 0);
   height: 80px;
@@ -154,6 +247,43 @@ a, li {
     margin-top: 0;
   }
 }
+/* ---------------RESET CSS -------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: fuenteHelvetica;
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+a, li {
+  font-size: none;
+  text-decoration: none;
+  display: inline-block;
+  color: #1416B8;
+}
+
+/* ------------PAGE FOTOSPERSONAS --------------------------*/
+#fotosPersonas {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#fotosPersonas img {
+  width: 480px;
+  margin: 15px;
+  display: flex;
+}
+
+/* ---------------FUENTE -------------------*/
+@font-face {
+  font-family: fuenteHelvetica;
+  src: url(../fuentes/Helvetica.ttf);
+}
 /* ----------------------------------MAIN-------------------------------------------------------- */
 /* ---------ESTILOS DEL BODY------- */
 main {
@@ -175,21 +305,6 @@ main {
     margin-top: 40px;
   }
 }
-/* ---------------------------------PAGE FOTOSPERSONAS -------------------------------------------*/
-#fotosPersonas {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-#fotosPersonas img {
-  width: 480px;
-  margin: 15px;
-  display: flex;
-}
-
 /*----------------------------------------PAGE FOTOSLUGARES-------------------------------------------*/
 #fotosLugares {
   width: 100%;
@@ -333,134 +448,6 @@ main {
   font-size: 15px;
   margin: 3px;
   display: inline-block;
-}
-
-/*-------------------------------------------FOOTER-------------------------------------------------------*/
-#footer {
-  display: flex;
-  height: auto;
-  width: 100%;
-  bottom: 0;
-  background-color: #ffffff;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/*--------- CAJA #1 LOGONOMBRE---------*/
-.footerLogonombre {
-  display: flex;
-  width: auto;
-  height: auto;
-  justify-content: flex-start;
-  color: #1416B8;
-  text-align: left;
-  flex-direction: column;
-  margin-left: 10px;
-}
-
-.footerLogonombre p {
-  margin-bottom: 0;
-  font-size: 10px;
-}
-
-.footerLogonombre h4 {
-  display: flex;
-  margin-top: 20px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-/*-------- CAJA #3 LINKS PAGES---------*/
-.footerLinks ul {
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-}
-
-.footerLinks ul li {
-  width: auto;
-  list-style: none;
-  padding: 0px;
-  display: flex;
-  justify-content: flex-end;
-  font-size: 12px;
-}
-
-/*---------- CAJA #4 REDES----------*/
-.footerRedes i {
-  font-size: 17px;
-  color: #DDF246;
-  margin: 5px;
-}
-
-.footerRedes {
-  display: flex;
-  align-items: center;
-  height: 40px;
-  width: 40px;
-}
-
-/*------------HOVERFOOTER-------------*/
-#footer ul a:hover {
-  color: #DDF246;
-}
-
-/*----SISTEMA RESPONSIVO FOOTER-------*/
-@media (max-width: 768px) {
-  #footer {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .footerLinks ul li {
-    font-size: 12px;
-    justify-content: center;
-    padding: 0;
-  }
-  .footerLinks ul {
-    margin-top: 0;
-    justify-content: center;
-    padding: 0;
-  }
-  .footerRedes i {
-    font-size: 12px;
-  }
-  .footerLogonombre h4 {
-    font-size: 14px;
-    justify-content: center;
-    margin-top: 0;
-  }
-  .footerLogonombre p {
-    font-size: 8px;
-    justify-content: center;
-  }
-}
-@media (max-width: 480px) {
-  #footer {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .footerLinks ul li {
-    font-size: 10px;
-    justify-content: center;
-    padding: 0;
-  }
-  .footerLinks ul {
-    margin-top: 0;
-    justify-content: center;
-    padding: 0;
-  }
-  .footerRedes i {
-    font-size: 10px;
-  }
-  .footerLogonombre h4 {
-    font-size: 12px;
-    justify-content: center;
-    margin-top: 0;
-  }
-  .footerLogonombre p {
-    font-size: 8px;
-    justify-content: center;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
