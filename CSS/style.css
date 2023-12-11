@@ -63,13 +63,16 @@
     gap: 10px;
   }
   .footerLinks ul li {
-    font-size: 12px;
     padding: 0;
+  }
+  .footerLinks ul li a {
+    font-size: 12px;
   }
   .footerLinks ul {
     margin-top: 0;
     padding: 0;
     align-items: center;
+    line-height: 1.5;
   }
   .footerRedes i {
     font-size: 12px;
@@ -130,26 +133,22 @@
   height: 80px;
   justify-content: space-between;
 }
-
-.MenuNav {
+#navBar .MenuNav {
   height: 80px;
   display: flex;
   align-items: center;
 }
-
-.MenuNav ul {
+#navBar .MenuNav ul {
   padding: 0;
   margin: 0;
   margin-right: 10px;
   float: right;
 }
-
-.MenuNav ul li {
+#navBar .MenuNav ul li {
   line-height: 80px;
   margin: 0 5px;
 }
-
-.MenuNav ul li a {
+#navBar .MenuNav ul li a {
   color: #1416B8;
   font-size: 14px;
 }
@@ -194,25 +193,6 @@
     justify-content: space-evenly;
     margin-top: 20px;
   }
-  #navBar ul li {
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  #navBar ul li a {
-    font-size: 14px;
-  }
-  .LogoHeader h4 a {
-    font-size: 35px;
-    line-height: 85px;
-  }
-  .LogoHeader {
-    display: flex;
-    align-items: center;
-  }
-  .checktn {
-    display: block;
-  }
   #navBar ul {
     position: fixed;
     width: 100%;
@@ -223,6 +203,25 @@
     left: -100%;
     text-align: center;
     transition: all 0.5s;
+  }
+  #navBar ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  #navBar ul li a {
+    font-size: 14px;
+  }
+  #navBar .LogoHeader {
+    display: flex;
+    align-items: center;
+  }
+  .LogoHeader h4 a {
+    font-size: 35px;
+    line-height: 85px;
+  }
+  .checktn {
+    display: block;
   }
   #navBar .MenuNav ul a:hover {
     color: white;
@@ -272,13 +271,29 @@ a, li {
   flex-wrap: wrap;
   justify-content: center;
 }
-
 #fotosPersonas img {
   width: 480px;
   margin: 15px;
   display: flex;
 }
 
+/* ------------SISTEMA RESPONSIVO PAGE FOTOSPERSONAS --------------------------*/
+@media (max-width: 768px) {
+  #fotosPersonas img {
+    width: 450px;
+    margin: 0;
+    object-fit: cover;
+  }
+}
+@media (max-width: 480px) {
+  #fotosPersonas {
+    margin-top: 0;
+    padding: 0px 30px;
+  }
+  #fotosPersonas img {
+    width: 380px;
+  }
+}
 /* ---------------FUENTE -------------------*/
 @font-face {
   font-family: fuenteHelvetica;
@@ -320,6 +335,22 @@ main {
   display: flex;
 }
 
+@media (max-width: 768px) {
+  #fotosLugares img {
+    width: 450px;
+    margin: 0;
+    object-fit: cover;
+  }
+}
+@media (max-width: 480px) {
+  #fotosLugares {
+    margin-top: 0;
+    padding: 0px 30px;
+  }
+  #fotosLugares img {
+    width: 380px;
+  }
+}
 /* --------------------------------------------PAGE BIO -------------------------------------------------- */
 #biografia {
   display: flex;
@@ -327,43 +358,43 @@ main {
   justify-content: space-around;
   background-color: #ffffff;
 }
-
-#contenedorTextobio {
+#biografia .biografiaFoto img {
+  width: 380px;
+  height: 380px;
+}
+#biografia #contenedorTextobio {
   display: flex;
   flex-direction: column;
 }
-
-.biografiaParrafo {
+#biografia #contenedorTextobio .biografiaParrafo {
   display: flex;
   text-align: justify;
-  width: 480px;
+  width: 550px;
   height: 200px;
   justify-content: flex-start;
   padding: 20px;
 }
-
-.biografiaAbout {
+#biografia #contenedorTextobio .biografiaParrafo p {
+  color: #000000;
+  font-size: 15px;
+  line-height: 1.4;
+}
+#biografia #contenedorTextobio .biografiaAbout {
   display: flex;
   flex-direction: column;
   color: #000000;
   font-size: 12px;
   padding: 20px;
+  margin-top: 27px;
 }
-
-.biografiaParrafo p {
-  color: #000000;
-  font-size: 15px;
-}
-
-.biografiaFoto img {
-  width: 380px;
-  height: 380px;
+#biografia #contenedorTextobio .biografiaAbout p {
+  font-size: 13px;
 }
 
 /*----------------SISTEMA RESPONSIVO bio------------*/
 @media (max-width: 968px) {
   .biografiaFoto img {
-    width: 320px;
+    width: 300px;
     height: 320px;
   }
 }
@@ -378,26 +409,29 @@ main {
     height: 250px;
     margin-top: 20px;
   }
-  #contenedorTextobio .biografiaParrafo {
+  #biografia #contenedorTextobio .biografiaParrafo {
     width: 320px;
     height: 200px;
   }
-  #contenedorTextobio .biografiaParrafo p {
+  #biografia #contenedorTextobio .biografiaParrafo p {
     font-size: 12px;
   }
-  .biografiaAbout {
-    margin-top: 20px;
+  #biografia #contenedorTextobio .biografiaParrafo #contenedorTextobio .biografiaAbout {
+    margin-top: 30px;
     margin-bottom: 20px;
+  }
+  #biografia #contenedorTextobio .biografiaParrafo #contenedorTextobio .biografiaAbout p {
+    font-size: 10px;
   }
 }
 @media (max-width: 480px) {
+  #biografia {
+    margin: 20px 0 0 0;
+  }
   #biografia .biografiaFoto img {
     width: 250px;
     height: 250px;
     margin-top: 0;
-  }
-  #biografia {
-    margin: 20px 0 0 0;
   }
 }
 /*-------------PAGE CONTACTO --------*/
@@ -406,48 +440,50 @@ main {
   background-size: cover;
   background-position: center;
   height: 100vh;
+  position: relative;
 }
-
-#contenedorContacto {
-  display: inline-block;
+.MainContacto .formContacto form {
+  width: 100%;
+  text-align: center;
+  padding: 70px;
 }
-
-.formContacto form {
-  position: absolute;
-  margin-top: 100px;
-  left: 495px;
-}
-
-.formcontactoNombre {
+.MainContacto .formcontactoNombre, .MainContacto .formcontactoEmail {
   font-size: 15px;
   background-color: white;
   border: 1px solid grey;
   height: 35px;
-  border-radius: 20px;
-  width: 250px;
+  width: 400px;
+  padding: 10px;
+  font-family: fuenteHelvetica;
+  border-radius: 4px;
 }
-
-.formcontactoEmail {
+.MainContacto .formcontactoMensaje {
   font-size: 15px;
   background-color: white;
   border: 1px solid grey;
-  height: 35px;
-  border-radius: 20px;
-  width: 250px;
+  width: 400px;
+  padding: 10px;
+  border-radius: 4px;
 }
-
-.formcontactoMensaje {
-  font-size: 15px;
-  background-color: white;
+.MainContacto #submit .boton {
+  width: 100px;
+  border: none;
+  background: white;
+  padding: 15px;
   border: 1px solid grey;
-  border-radius: 10px;
-  width: 260px;
+  border-radius: 40px;
+  color: rgb(63, 63, 63);
+  font-family: fuenteHelvetica;
 }
 
-#submit {
-  font-size: 15px;
-  margin: 3px;
-  display: inline-block;
+/*----------------SISTEMA RESPONSIVO CONTACTO-------------*/
+@media (max-width: 525px) {
+  .formContacto form {
+    padding: 0;
+  }
+  .formcontactoNombre input {
+    width: 300px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

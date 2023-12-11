@@ -1,0 +1,33 @@
+/* ------------PAGE FOTOSPERSONAS --------------------------*/
+
+#fotosPersonas {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    img {
+        width: 480px;
+        margin: 15px;
+        display: flex;
+    }
+}
+
+/* ------------SISTEMA RESPONSIVO PAGE FOTOSPERSONAS --------------------------*/
+@media (max-width: 768px) {
+    #fotosPersonas img {
+        width: 450px;
+        margin: 0;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 480px) {
+    #fotosPersonas {
+        margin-top: 0;
+        padding: 0px 30px;
+        img {
+            width: 380px;
+        }
+    }
+}

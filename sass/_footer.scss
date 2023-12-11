@@ -65,14 +65,16 @@
         gap: 10px;
     }
     .footerLinks ul li {
-        font-size: 12px;
         padding: 0;
     }
-    
+    .footerLinks ul li a {
+        font-size: 12px;
+    }
     .footerLinks ul {
         margin-top: 0;
         padding: 0;
         align-items: center;
+        line-height: 1.5;
     }
 
     .footerRedes i {

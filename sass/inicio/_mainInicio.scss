@@ -1,0 +1,31 @@
+/* ---------------FUENTE -------------------*/
+
+@font-face {
+    font-family: fuenteHelvetica;
+    src: url(../fuentes/Helvetica.ttf);
+}
+
+/* ----------------------------------MAIN-------------------------------------------------------- */
+/* ---------ESTILOS DEL BODY------- */
+
+main {
+    min-height: 100vh;
+    background-color: #ffffff;
+
+}
+
+/*----------------SISTEMA RESPONSIVO MAIN INICIO-------------*/
+
+@media (max-width: 942px) {
+    main, footer {
+        margin-top: 0;
+        padding: 0;
+}
+}
+@media (max-width: 768px) {
+main {
+    min-height: 0;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+}

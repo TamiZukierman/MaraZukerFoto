@@ -1,0 +1,59 @@
+/*-------------PAGE CONTACTO --------*/
+
+.MainContacto {
+    background-image: url(../images/contacto/contacto.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    .formContacto form {
+        width: 100%;
+        text-align: center;
+        padding: 70px;
+    }
+    .formcontactoNombre , .formcontactoEmail {
+        font-size: 15px;
+        background-color: white;
+        border: 1px solid grey;
+        height: 35px;
+        width: 400px;
+        padding: 10px;
+        font-family: fuenteHelvetica;
+        border-radius: 4px;
+    }
+    .formcontactoMensaje {
+        font-size: 15px;
+        background-color: white;
+        border: 1px solid grey;
+        width: 400px;
+        padding: 10px;
+        border-radius: 4px;
+    }
+    #submit .boton {
+        width: 100px;
+        border: none;
+        background:white;
+        padding: 15px;
+        border: 1px solid grey;
+        border-radius: 40px;
+        color: rgb(63, 63, 63);
+        font-family: fuenteHelvetica;
+    }
+}
+
+/*----------------SISTEMA RESPONSIVO CONTACTO-------------*/
+@media (max-width: 525px) {
+    .formContacto form {
+
+        padding: 0;
+    }
+    .formcontactoNombre input {
+    width: 300px;
+    }
+}
+
+
+
+
+
+
