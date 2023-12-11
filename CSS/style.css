@@ -326,6 +326,9 @@ main {
   .carousel-inner {
     display: none;
   }
+  .carousel-control-next-icon {
+    display: none;
+  }
   .imagenesMobile {
     display: block;
     display: flex;
@@ -469,7 +472,9 @@ main {
 .MainContacto .formContacto form {
   width: 100%;
   text-align: center;
-  padding: 70px;
+}
+.MainContacto .formcontactoNombre {
+  margin-top: 70px;
 }
 .MainContacto .formcontactoNombre, .MainContacto .formcontactoEmail {
   font-size: 15px;
@@ -501,11 +506,11 @@ main {
 
 /*----------------SISTEMA RESPONSIVO CONTACTO-------------*/
 @media (max-width: 525px) {
-  .formContacto form {
-    padding: 0;
+  .MainContacto {
+    background-image: url(../../images/contacto/contactomobile.jpg);
   }
-  .formcontactoNombre input {
-    width: 300px;
+  .formcontactoNombre, .formcontactoEmail, .formcontactoMensaje {
+    width: 100%;
   }
 }
 

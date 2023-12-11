@@ -9,7 +9,9 @@
     .formContacto form {
         width: 100%;
         text-align: center;
-        padding: 70px;
+    }
+    .formcontactoNombre {
+        margin-top: 70px;
     }
     .formcontactoNombre , .formcontactoEmail {
         font-size: 15px;
@@ -43,14 +45,13 @@
 
 /*----------------SISTEMA RESPONSIVO CONTACTO-------------*/
 @media (max-width: 525px) {
-    .formContacto form {
-        padding: 0;
-    }
-    .formcontactoNombre input {
-    width: 300px;
+    .MainContacto {
+        background-image: url(../../images/contacto/contactomobile.jpg);
+        }
+    .formcontactoNombre , .formcontactoEmail , .formcontactoMensaje {
+        width: 100%;
     }
 }
-
 
 
 
