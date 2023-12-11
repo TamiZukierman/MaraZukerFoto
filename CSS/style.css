@@ -306,6 +306,10 @@ main {
   background-color: #ffffff;
 }
 
+.imagenesMobile {
+  display: none;
+}
+
 /*----------------SISTEMA RESPONSIVO MAIN INICIO-------------*/
 @media (max-width: 942px) {
   main, footer {
@@ -318,6 +322,26 @@ main {
     min-height: 0;
     margin-bottom: 20px;
     margin-top: 40px;
+  }
+  .carousel-inner {
+    display: none;
+  }
+  .imagenesMobile {
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .imagenesMobile img {
+    width: 450px;
+  }
+}
+@media (max-width: 480px) {
+  .imagenesMobile {
+    justify-content: center;
+  }
+  .imagenesMobile img {
+    width: 380px;
   }
 }
 /*----------------------------------------PAGE FOTOSLUGARES-------------------------------------------*/
@@ -449,7 +473,7 @@ main {
 }
 .MainContacto .formcontactoNombre, .MainContacto .formcontactoEmail {
   font-size: 15px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.4);
   border: 1px solid grey;
   height: 35px;
   width: 400px;
@@ -459,21 +483,20 @@ main {
 }
 .MainContacto .formcontactoMensaje {
   font-size: 15px;
-  background-color: white;
-  border: 1px solid grey;
+  background-color: rgba(255, 255, 255, 0.4);
   width: 400px;
   padding: 10px;
   border-radius: 4px;
 }
 .MainContacto #submit .boton {
   width: 100px;
-  border: none;
-  background: white;
+  background: rgba(255, 255, 255, 0.694);
   padding: 15px;
-  border: 1px solid grey;
   border-radius: 40px;
   color: rgb(63, 63, 63);
   font-family: fuenteHelvetica;
+  cursor: pointer;
+  border: none;
 }
 
 /*----------------SISTEMA RESPONSIVO CONTACTO-------------*/

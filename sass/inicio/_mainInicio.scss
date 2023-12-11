@@ -14,6 +14,10 @@ main {
 
 }
 
+.imagenesMobile {
+    display: none;
+}
+
 /*----------------SISTEMA RESPONSIVO MAIN INICIO-------------*/
 
 @media (max-width: 942px) {
@@ -28,4 +32,25 @@ main {
     margin-bottom: 20px;
     margin-top: 40px;
 }
+.carousel-inner {
+    display: none;
+}
+.imagenesMobile {
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    img {
+        width: 450px;
+    }
+}
+}
+
+@media (max-width: 480px) {
+    .imagenesMobile {
+        justify-content: center;
+        img {
+            width: 380px;  
+        }
+    }
 }

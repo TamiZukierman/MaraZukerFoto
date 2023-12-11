@@ -13,7 +13,7 @@
     }
     .formcontactoNombre , .formcontactoEmail {
         font-size: 15px;
-        background-color: white;
+        background-color:rgba(255, 255, 255, 0.4);
         border: 1px solid grey;
         height: 35px;
         width: 400px;
@@ -23,28 +23,27 @@
     }
     .formcontactoMensaje {
         font-size: 15px;
-        background-color: white;
-        border: 1px solid grey;
+        background-color: rgba(255, 255, 255, 0.4);
         width: 400px;
         padding: 10px;
         border-radius: 4px;
     }
     #submit .boton {
         width: 100px;
-        border: none;
-        background:white;
+        background:rgba(255, 255, 255, 0.694);
         padding: 15px;
-        border: 1px solid grey;
         border-radius: 40px;
         color: rgb(63, 63, 63);
         font-family: fuenteHelvetica;
+        cursor: pointer;
+        border: none;
+        
     }
 }
 
 /*----------------SISTEMA RESPONSIVO CONTACTO-------------*/
 @media (max-width: 525px) {
     .formContacto form {
-
         padding: 0;
     }
     .formcontactoNombre input {
