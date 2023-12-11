@@ -46,13 +46,12 @@
 /*----------------SISTEMA RESPONSIVO CONTACTO-------------*/
 @media (max-width: 525px) {
     .MainContacto {
-        background-image: url(../../images/contacto/contactomobile.jpg);
+        background-image: url(../images/contacto/contactomobile.jpg);
         }
     .formcontactoNombre , .formcontactoEmail , .formcontactoMensaje {
         width: 100%;
     }
 }
-
 
 
 
