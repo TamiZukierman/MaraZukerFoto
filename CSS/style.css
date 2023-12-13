@@ -471,7 +471,8 @@ main {
 }
 .MainContacto .formContacto form {
   width: 100%;
-  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
 }
 .MainContacto .formcontactoNombre {
   margin-top: 70px;
@@ -481,7 +482,7 @@ main {
   background-color: rgba(255, 255, 255, 0.4);
   border: 1px solid grey;
   height: 35px;
-  width: 400px;
+  width: 100%;
   padding: 10px;
   font-family: fuenteHelvetica;
   border-radius: 4px;
@@ -489,7 +490,7 @@ main {
 .MainContacto .formcontactoMensaje {
   font-size: 15px;
   background-color: rgba(255, 255, 255, 0.4);
-  width: 400px;
+  width: 100%;
   padding: 10px;
   border-radius: 4px;
 }
@@ -511,6 +512,9 @@ main {
   }
   .formcontactoNombre, .formcontactoEmail, .formcontactoMensaje {
     width: 100%;
+  }
+  .formContacto form {
+    padding: 0 5%;
   }
 }
 
