@@ -16,6 +16,7 @@
   color: #1416B8;
   text-align: left;
   flex-direction: column;
+  margin-left: 10px;
 }
 #footer .footerLogonombre p {
   margin-bottom: 0;
