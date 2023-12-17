@@ -16,7 +16,6 @@
   color: #1416B8;
   text-align: left;
   flex-direction: column;
-  margin-left: 10px;
 }
 #footer .footerLogonombre p {
   margin-bottom: 0;
@@ -93,7 +92,6 @@
     gap: 10px;
   }
   .footerLinks ul li {
-    font-size: 10px;
     justify-content: center;
     padding: 0;
   }
@@ -241,9 +239,11 @@
   .checktn {
     font-size: 25px;
     line-height: 70px;
+    margin-top: 9.5px;
   }
   #navBar {
     margin-top: 0;
+    align-items: start;
   }
 }
 /* ---------------RESET CSS -------------------*/
@@ -323,7 +323,7 @@ main {
     margin-bottom: 20px;
     margin-top: 40px;
   }
-  .carousel-inner {
+  #carouselExampleFade {
     display: none;
   }
   .carousel-control-next-icon {
@@ -403,7 +403,7 @@ main {
 }
 #biografia #contenedorTextobio .biografiaParrafo p {
   color: #000000;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.4;
 }
 #biografia #contenedorTextobio .biografiaAbout {
@@ -415,7 +415,7 @@ main {
   margin-top: 27px;
 }
 #biografia #contenedorTextobio .biografiaAbout p {
-  font-size: 13px;
+  font-size: 12px;
 }
 
 /*----------------SISTEMA RESPONSIVO bio------------*/
@@ -447,8 +447,8 @@ main {
     margin-top: 30px;
     margin-bottom: 20px;
   }
-  #biografia #contenedorTextobio .biografiaParrafo #contenedorTextobio .biografiaAbout p {
-    font-size: 10px;
+  #biografia #contenedorTextobio .biografiaParrafo .biografiaAbout p {
+    font-size: 11px;
   }
 }
 @media (max-width: 480px) {
@@ -459,6 +459,9 @@ main {
     width: 250px;
     height: 250px;
     margin-top: 0;
+  }
+  #biografia .biografiaAbout p {
+    font-size: 11px;
   }
 }
 /*-------------PAGE CONTACTO --------*/
@@ -496,7 +499,7 @@ main {
 }
 .MainContacto #submit .boton {
   width: 100px;
-  background: rgba(255, 255, 255, 0.694);
+  background: rgba(255, 255, 255, 0.4);
   padding: 15px;
   border-radius: 40px;
   color: rgb(63, 63, 63);
