@@ -356,11 +356,15 @@ main {
   flex-wrap: wrap;
   justify-content: center;
 }
-
 #fotosLugares img {
   width: 483px;
   margin: 15px;
   display: flex;
+}
+
+#fotosLugares img:hover {
+  transform: scale(1);
+  transition: all 0.5s;
 }
 
 @media (max-width: 768px) {

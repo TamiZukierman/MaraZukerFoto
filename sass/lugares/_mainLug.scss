@@ -6,11 +6,16 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    img{
+        width: 483px;
+        margin: 15px;
+        display: flex;
+    }
 }
-#fotosLugares img {
-    width: 483px;
-    margin: 15px;
-    display: flex;
+
+#fotosLugares img:hover {
+    transform: scale(1);
+    transition: all .5s;
 }
 
 
